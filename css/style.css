@@ -1,0 +1,16 @@
+/* TODA ESTRUTURA DO SITE ou HTML */
+body {
+    background-color: #03c0f0;
+}
+
+/* Cabeçalho */
+header {
+    /* Cor fundo = Background */
+    background-color: #ccc;
+    width: 70%; /* largura */  /* Responsivas */
+    height: 30%; /* altura */
+
+}
+
+
+
