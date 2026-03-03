@@ -1,15 +1,40 @@
+/* Google Fonts */
+
+
+/* Fontes Utilizadas */
+
+
+/* Reset CSS 
+= Padronizar os Navegadores */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: transparent;
+}
+
 /* TODA ESTRUTURA DO SITE ou HTML */
 body {
-    background-color: #03c0f0;
+    background-color: #1d1d1d;
     font-size: 16px;
 }
+
+
 
 /* Cabeçalho */
 header {
     /* Cor fundo = Background */
     background-color: #ccc;
-    width: 70%; /* largura */  /* Responsivas */
-    height: 30%; /* altura */
+    width: 100%; /* largura */  /* Responsivas */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-desktop {
+    display: none;
 }
 
 h1 {
@@ -21,3 +46,10 @@ h1 {
 
 
 
+/* Responsivo */
+
+@media (min-width:768px) {
+    .menu-desktop {
+        display: flex;
+    }
+}
