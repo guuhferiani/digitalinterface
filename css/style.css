@@ -92,6 +92,10 @@ header {
     color: var(--cor-destaque);
 }
 
+.logo img {
+    width: 5.2rem; /* 52 PX L  */ 
+    height: 5rem; /*  50 PX A */
+}
 
 
 
