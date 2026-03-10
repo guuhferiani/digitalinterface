@@ -13,9 +13,35 @@
 }
 
 /* Variaveis de Cores */
-:root {
-    --cor-destaque: #e40e0e;
-    --cor-menu-padrao: #d4d4d4;
+/* Tema Dark */
+:root, :root[data-theme='dark'] {
+
+    --cor-fundo: #1d1d1d;
+    --cor-fundo-secundaria:#343434;
+
+    --cor-txt-menu: #8383838b;
+    --cor-destaque: #fff;
+
+    --icone-tema: #f19217;
+}
+
+/* Tema Claro */
+:root[data-theme='light'] {
+
+    --cor-fundo: #fff;
+    --cor-fundo-secundaria: #aaa;
+
+    --cor-txt-menu: #9595957f;
+    --cor-destaque: #111;
+
+    --icone-tema: #179eec;
+}
+
+
+/* Filtro Cor do Logo */
+html[data-theme='dark'] .logo {
+    filter: invert(1); 
+    /* para img preto */
 }
 
 
@@ -28,6 +54,7 @@
 html {
     font-size: 62.5%;
 }
+
 
 
 /* Reset CSS 
@@ -43,16 +70,14 @@ html {
 
 /* TODA ESTRUTURA DO SITE ou HTML */
 body {
-    background-color: #1d1d1d00;
+    background-color: var(--cor-fundo-secundaria);
     font-size: 16px;
 }
-
-
 
 /* Cabeçalho */
 header {
     /* Cor fundo = Background */
-    background-color: #ccc;
+    background-color: var(--cor-fundo);
     width: 100%; /* largura */  /* Responsivas */
     display: flex;
     justify-content: space-between;
@@ -79,7 +104,7 @@ header {
 }
 
 .menu-texto {
-    color: var(--cor-menu-padrao);
+    color: var(--cor-txt-menu);
     text-transform: capitalize;
     font-size: 1.8rem; /* 18px */
     font-family: var(--fonte-menu);
@@ -101,9 +126,8 @@ header {
 .header-toggle {
     cursor: pointer;
     font-size: 1.8rem;
-    color: var();
+    color: var(--icone-tema);
 }
-
 
 
 
