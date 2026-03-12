@@ -23,6 +23,8 @@
     --cor-destaque: #fff;
 
     --icone-tema: #f19217;
+
+    --cor-titulo: #fff;
 }
 
 /* Tema Claro */
@@ -35,6 +37,9 @@
     --cor-destaque: #111;
 
     --icone-tema: #179eec;
+
+    --cor-titulo: #000;
+
 }
 
 
@@ -127,6 +132,16 @@ header {
     font-size: 1.8rem;
     color: var(--icone-tema);
 }
+
+/* Hero = HOME */
+
+h1 {
+    color: var(--cor-titulo); /* cor texto */
+    /* Tamanho do texto */
+    font-size: ;
+}
+
+
 
 
 /* Responsivo */
