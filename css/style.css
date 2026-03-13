@@ -26,6 +26,9 @@
 
     --cor-titulo: #fff;
     --cor-textos: #fff;
+
+    --cor-icones: #105278;
+    --destaque-icones: #fff;
 }
 
 /* Tema Claro */
@@ -41,6 +44,9 @@
 
     --cor-titulo: #000;
     --cor-textos: #131313;
+
+    --cor-icones: #8a9194;
+    --destaque-icones: #000;
 
 }
 
@@ -155,6 +161,27 @@ p {
     color: var(--cor-textos);
     font-size: 1.8rem;
     font-family: var(--fonte-padrao);
+}
+
+
+/* Redes sociais */
+
+.menu-social {  /* UL */
+    display: flex;
+    list-style: none;
+    gap: 1.2rem;
+    padding: 0;
+}
+
+.menu-social .social-icon {
+    color: var(--cor-icones);
+    font-size: 3.5rem;
+}
+
+
+.menu-social .social-icon:hover {
+    color: var(--destaque-icones);
+    transition: ease-out .7s;
 }
 
 
