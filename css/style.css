@@ -178,11 +178,14 @@ p {
     font-size: 3.5rem;
 }
 
-
 .menu-social .social-icon:hover {
     color: var(--destaque-icones);
     transition: ease-out .7s;
 }
+
+
+
+
 
 
 /* Responsivo */
