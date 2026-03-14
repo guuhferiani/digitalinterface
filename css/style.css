@@ -184,6 +184,29 @@ p {
 }
 
 
+/* Carousel */
+
+/* Estrutura dos 3 slides */
+
+/* Altura do Hero em Tela Cheia */
+.carousel .carousel-item {
+    height: 40vh; /* ViewPort Hight */
+    min-height: 400px;
+}
+
+/* tamanho das imagens */
+.carousel .carousel-item img,
+.carousel .carousel-item .ratio {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    pointer-events: none;
+}
+
+
+
+
+
 
 
 
