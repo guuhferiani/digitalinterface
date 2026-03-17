@@ -200,12 +200,44 @@ p {
     height: 100%;
     object-fit: cover;
     object-position: center;
+    /* Bloquear açoes Click Direito Mouse */
     pointer-events: none;
 }
 
+/* Filtro ou Overlay escuro Sutil acima dos slides */
 
+/* Pseudo-Elemento */
+.carousel .carousel-item::before {
+    content: "";
+    background: #000000a4;
+    position: absolute;
+    inset: 0;
+}
 
+.carousel .carousel-caption {
+    position: absolute;
+    inset: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.carousel h5 {
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+.carousel p {
+    font-size: 2.2rem;
+    color: #fff;
+}
+
+.carousel h5,
+.carousel p {
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.725);
+    
+}
 
 
 
