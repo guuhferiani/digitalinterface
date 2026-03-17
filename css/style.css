@@ -27,7 +27,7 @@
     --cor-titulo: #fff;
     --cor-textos: #fff;
 
-    --cor-icones: #105278;
+    --cor-icones: #7a8185;
     --destaque-icones: #fff;
 }
 
@@ -47,7 +47,6 @@
 
     --cor-icones: #8a9194;
     --destaque-icones: #000;
-
 }
 
 
@@ -238,6 +237,37 @@ p {
     text-shadow: 0 2px 14px rgba(0, 0, 0, 0.725);
     
 }
+
+/* Centralizar Objeto */
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video iframe {
+    aspect-ratio: 16/9;
+    width: 95%;
+    box-shadow: 0 15px 15px -2px #fff;
+}
+
+.complemento {
+    display: flex;
+    background: red;
+    padding: 6rem 1rem 2rem;
+    margin-top: -5rem;
+    justify-content: center;
+
+}
+
+.complemento h2 {
+    font-size: 2rem;
+    text-transform: none;
+    letter-spacing: normal;
+    font-weight: 500;
+    font-family: var(--fonte-padrao);
+}
+
 
 
 
