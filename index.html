@@ -1,208 +1,244 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br" data-theme="dark">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Digital Interface | Consultoria </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Interface | Consultoria</title>
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
 
     <!-- CSS Local -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
+  <body>
+    <header>
+      <!-- cabeçalho -->
 
+      <!-- LOGO -->
+      <div class="logo">
+        <!-- botao home -->
+        <a href="#home">
+          <img src="img/logo.svg" alt="" />
+        </a>
+      </div>
 
-<body>
-    <header> <!-- cabeçalho -->
-
-        <!-- LOGO -->
-        <div class="logo">
-            <!-- botao home -->
-            <a href="#home">
-                <img src="img/logo.svg" alt="">
+      <!-- Menu Desktop / Mobile -->
+      <nav class="menu-desktop">
+        <!-- LISTA -->
+        <ul class="menu">
+          <li>
+            <a href="#home" class="menu-link active">
+              <span class="menu-texto">home</span>
             </a>
-        </div>
+          </li>
+          <li>
+            <a href="#projetos" class="menu-link">
+              <span class="menu-texto">Projetos</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="menu-link">
+              <span class="menu-texto">sobre</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="menu-link">
+              <span class="menu-texto">contato</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
 
-        <!-- Menu Desktop / Mobile -->
-        <nav class="menu-desktop">
-            <!-- LISTA -->
-            <ul class="menu">
-                <li>
-                    <a href="#home" class="menu-link active">
-                        <span class="menu-texto">home</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="menu-link ">
-                        <span class="menu-texto">projetos</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="menu-link">
-                        <span class="menu-texto">sobre</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="menu-link">
-                        <span class="menu-texto">contato</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+      <!-- Icone Trocar Cor Tema -->
+      <div class="header-toggle">
+        <i class="bi bi-sun" id="toggleTheme"></i>
 
-        <!-- Icone Trocar Cor Tema -->
-        <div class="header-toggle">
-            <i class="bi bi-sun" id="toggleTheme"></i>
-
-            <!-- Botao Mobile Hamburger -->
-            <button>
-
-            </button>
-
-        </div>
-        <!-- Shift + ALT + F -->
-
-
-
+        <!-- Botao Mobile Hamburger -->
+        <button></button>
+      </div>
+      <!-- Shift + ALT + F -->
     </header>
 
     <!-- Home -->
     <main id="home">
+      <!-- Banner - Slides -->
 
-        <!-- Banner - Slides -->
-
-        <div id="carouselExampleCaptions" class="carousel slide">
-
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-
-            <div class="carousel-inner">
-
-                <!-- FOTO 1 -->
-                <div class="carousel-item active">
-                    <img src="img/slide1.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption">
-                        <h5>Pc Gamer</h5>
-                        <p>Review do meu Setup Gamer</p>
-                    </div>
-                </div>
-
-                <!-- FOTO 2 -->
-                <div class="carousel-item">
-                    <img src="img/slide2.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption">
-                        <h5>Projetos Recentes</h5>
-                        <p>Sites responsivos para todos os dispositivos</p>
-                    </div>
-                </div>
-
-                <!-- FOTO 3 -->
-                <div class="carousel-item">
-                    <img src="img/slide3.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption">
-                        <h5>Projetos Recentes</h5>
-                        <p>Sites responsivos para todos os dispositivos</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-
-        </div>
-        <!-- Fim Banner - Slides -->
-
-        <!-- Chamada ou Slogan - Titulo -->
-        <div class="main-content">
-
-            <h1>
-                <!-- Enfase -->
-                <strong>Soluções Criativas &</strong>
-                Desenvolvimento Front-End
-            </h1>
-
-            <p> Gustavo Feriani, São Paulo - SP. Desenvolvedor e Instrutor Front-End.</p>
-
-            <!-- Redes Sociais -->
-            <ul class="menu-social">
-                <li>
-                    <a href="https://github.com/guuhferiani" class="menu-link" target="_blank">
-                        <i class="bi bi-github social-icon"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/gustavo.feriani" class="menu-link" target="_blank">
-                        <i class="bi bi-instagram social-icon"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="menu-link" target="_blank">
-                        <i class="bi bi-linkedin social-icon"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/@ferianigustavo" class="menu-link" target="_blank">
-                        <i class="bi bi-youtube social-icon"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://wa.me/55119" class="menu-link" target="_blank">
-                        <i class="bi bi-whatsapp social-icon"></i>
-                    </a>
-                </li>
-            </ul>
-
-        </div> <!-- Div Main-content -->
-
-        <div class="video">
-            <iframe src="https://www.youtube.com/embed/bpKwuIvHnms"
-                title="Invista tempo no que importa. Não importa a ocasião, com Android você curte os momentos especiais."
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
         </div>
 
+        <div class="carousel-inner">
+          <!-- FOTO 1 -->
+          <div class="carousel-item active">
+            <img src="img/slide1.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption">
+              <h5>Pc Gamer</h5>
+              <p>Review do meu Setup Gamer</p>
+            </div>
+          </div>
+
+          <!-- FOTO 2 -->
+          <div class="carousel-item">
+            <img src="img/slide2.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption">
+              <h5>Projetos Recentes</h5>
+              <p>Sites responsivos para todos os dispositivos</p>
+            </div>
+          </div>
+
+          <!-- FOTO 3 -->
+          <div class="carousel-item">
+            <img src="img/slide3.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption">
+              <h5>Projetos Recentes</h5>
+              <p>Sites responsivos para todos os dispositivos</p>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Fim Banner - Slides -->
+
+      <!-- Chamada ou Slogan - Titulo -->
+      <div class="main-content">
+        <h1>
+          <!-- Enfase -->
+          <strong>Soluções Criativas &</strong>
+          Desenvolvimento Front-End
+        </h1>
+
+        <p>
+          Gustavo Feriani, São Paulo - SP. Desenvolvedor e Instrutor Front-End.
+        </p>
+
+        <!-- Redes Sociais -->
+        <ul class="menu-social">
+          <li>
+            <a
+              href="https://github.com/guuhferiani"
+              class="menu-link"
+              target="_blank"
+            >
+              <i class="bi bi-github social-icon"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/gustavo.feriani"
+              class="menu-link"
+              target="_blank"
+            >
+              <i class="bi bi-instagram social-icon"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="menu-link" target="_blank">
+              <i class="bi bi-linkedin social-icon"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/@ferianigustavo"
+              class="menu-link"
+              target="_blank"
+            >
+              <i class="bi bi-youtube social-icon"></i>
+            </a>
+          </li>
+          <li>
+            <a href="http://wa.me/55119" class="menu-link" target="_blank">
+              <i class="bi bi-whatsapp social-icon"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Div Main-content -->
+
+      <div class="video">
+        <iframe
+          src="https://www.youtube.com/embed/bpKwuIvHnms"
+          title="Invista tempo no que importa. Não importa a ocasião, com Android você curte os momentos especiais."
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
     </main>
 
     <section class="complemento">
-
-        <h2>
-            Conhecimento nas principais tecnologias do mercado.
-        </h2>
-
+      <h2>Conhecimento nas principais tecnologias do mercado.</h2>
     </section>
 
+    <!-- Nova Seção -->
+    <section id="projetos" class="projetos">
 
+      <h2>Projetos</h2>
 
-
-
+      div.projeto-container
+    
+    </section>
 
     <!-- CDN Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>
