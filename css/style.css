@@ -300,6 +300,22 @@ p {
   text-transform: uppercase;
 }
 
+.projeto-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+/* Articles dos projetos */
+.projeto-card {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+
+
 
 /* Responsivo */
 
