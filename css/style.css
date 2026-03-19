@@ -288,7 +288,7 @@ p {
   flex-direction: column;
   gap: 2rem;
   /* Voltar */
-  scroll-margin-top: ; 
+  scroll-margin-top: ;
 }
 
 .projetos h2 {
@@ -298,6 +298,10 @@ p {
   color: var(--cor-titulo);
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.card-cover {
+  width: 35%;
 }
 
 
