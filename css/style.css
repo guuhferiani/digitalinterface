@@ -310,7 +310,13 @@ p {
 .projeto-card {
   display: flex;
   flex-direction: column;
-  
+}
+
+/* Classes das IMGs */
+.card-cover {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5rem 5rem;
 }
 
 
@@ -372,6 +378,20 @@ p {
   .projetos h2 {
     font-size: 3.3rem;
   }
+}
+
+/* Telas a partir de 992 */
+@media (min-width: 992px)  {
+
+  .card-cover {
+    width: 55%;
+  }
+
+  .card-reverse {
+    /* Reverso / modo Espelho */
+    flex-direction: row-reverse;
+  }
+  
 }
 
 /* Telas maiores que 1200 */
