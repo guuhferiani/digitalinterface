@@ -265,6 +265,7 @@ p {
   font-weight: 500;
   font-family: var(--fonte-padrao);
   color: var(--cor-titulo);
+  margin-top: 20px;
 }
 
 /* Seção Geral */
@@ -331,12 +332,19 @@ p {
   margin-top: 2rem;
   text-align: justify;
 }
+.card-reverse .card-body {
+  align-items: flex-end;
+  justify-content: flex-start;
+  text-align: end;
+  margin-top: 10px;
+  gap: 2rem;
+}
 
 /* titulo do produto */
 .card-body .card-title {
   color: var(--cor-subtitulo);
   font-size: 3rem;
-  font-family:var(--fonte-subtitulo);
+  font-family: var(--fonte-subtitulo);
   font-weight: 700;
 }
 
@@ -344,7 +352,7 @@ p {
 .card-body .card-description {
   color: var(--cor-textos);
   font-size: 1.8rem;
-  font-family:var(--fonte-padrao);
+  font-family: var(--fonte-padrao);
   letter-spacing: 1px;
 }
 
@@ -369,7 +377,7 @@ p {
 
 .card-item i:hover {
   color: var(--icone-tema);
-  transition: ease-in-out .3s;
+  transition: ease-in-out 0.3s;
 }
 
 /* Responsivo */
@@ -383,7 +391,6 @@ p {
   #home {
     padding-top: 6rem;
   }
-
 }
 
 /* A partir de Telas Grandes */
@@ -444,7 +451,6 @@ p {
     /* Reverso / modo Espelho */
     flex-direction: row-reverse;
   }
-
 }
 
 /* Telas maiores que 1200 */
@@ -452,8 +458,6 @@ p {
   .projetos h2 {
     font-size: 4rem;
   }
-
-  
 }
 
 /* Telas maiores que 1400px */
@@ -469,7 +473,7 @@ p {
 
   /* Voltar Aqui */
   .projetos {
-    padding: 10rem 7rem 4rem;
+    padding: 10rem 12rem 4rem;
   }
 
   .complemento h2 {
@@ -480,10 +484,7 @@ p {
     font-size: 6rem;
   }
 
-  
   .projetos .card-title {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
-
-  
 }
