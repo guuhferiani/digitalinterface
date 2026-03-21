@@ -23,6 +23,7 @@
   --icone-tema: #f19217;
 
   --cor-titulo: #fff;
+  --cor-subtitulo: #15c0f4;
   --cor-textos: #fff;
 
   --cor-icones: #7a8185;
@@ -42,6 +43,7 @@
   --icone-tema: #179eec;
 
   --cor-titulo: #000;
+  --cor-subtitulo: #1c1c1c;
   --cor-textos: #131313;
 
   --cor-icones: #8a9194;
@@ -288,7 +290,7 @@ p {
   flex-direction: column;
   gap: 2rem;
   /* Voltar */
-  scroll-margin-top: ;
+  scroll-margin-top:;
 }
 
 .projetos h2 {
@@ -310,6 +312,7 @@ p {
 .projeto-card {
   display: flex;
   flex-direction: column;
+  gap: 4rem;
 }
 
 /* Classes das IMGs */
@@ -319,9 +322,55 @@ p {
   border-radius: 5rem 5rem;
 }
 
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+  text-align: justify;
+}
 
+/* titulo do produto */
+.card-body .card-title {
+  color: var(--cor-subtitulo);
+  font-size: 3rem;
+  font-family:var(--fonte-subtitulo);
+  font-weight: 700;
+}
 
+/* Paragrafo sobre o produto */
+.card-body .card-description {
+  color: var(--cor-textos);
+  font-size: 1.8rem;
+  font-family:var(--fonte-padrao);
+  letter-spacing: 1px;
+}
 
+.card-lista {
+  list-style: none;
+  padding-left: 0;
+}
+
+.card-item {
+  color: var(--cor-textos);
+  font-size: 1.8rem;
+  font-family: var(--fonte-padrao);
+  margin-bottom: 10px;
+}
+
+/* icone da lista */
+.card-item i {
+  color: var(--cor-textos);
+  font-size: 2.2rem;
+  margin-right: 10px;
+}
+
+.card-item i:hover {
+  color: var(--icone-tema);
+  transition: ease-in-out .3s;
+}
 
 /* Responsivo */
 
@@ -334,6 +383,7 @@ p {
   #home {
     padding-top: 6rem;
   }
+
 }
 
 /* A partir de Telas Grandes */
@@ -381,7 +431,10 @@ p {
 }
 
 /* Telas a partir de 992 */
-@media (min-width: 992px)  {
+@media (min-width: 992px) {
+  .projeto-card {
+    flex-direction: row;
+  }
 
   .card-cover {
     width: 55%;
@@ -391,16 +444,16 @@ p {
     /* Reverso / modo Espelho */
     flex-direction: row-reverse;
   }
-  
+
 }
 
 /* Telas maiores que 1200 */
 @media (min-width: 1200px) {
-
   .projetos h2 {
     font-size: 4rem;
   }
 
+  
 }
 
 /* Telas maiores que 1400px */
@@ -409,7 +462,7 @@ p {
     font-size: 8.5rem;
   }
 
-    .complemento {
+  .complemento {
     padding: 5rem 7rem 4rem;
     margin-top: -7rem;
   }
@@ -426,4 +479,11 @@ p {
   .projetos h2 {
     font-size: 6rem;
   }
+
+  
+  .projetos .card-title {
+    font-size: 4rem;
+  }
+
+  
 }
