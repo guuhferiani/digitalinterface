@@ -291,7 +291,7 @@ p {
   flex-direction: column;
   gap: 2rem;
   /* Voltar */
-  scroll-margin-top:;
+  scroll-margin-top: 50px;
 }
 
 .projetos h2 {
