@@ -385,18 +385,25 @@
           <form action="https://formspree.io/f/xqegzqnn" method="POST">
             
             <!-- Entrada NOME -->
-            <input type="text" name="nome" placeholder="Nome Completo *">
+            <input type="text" name="nome" placeholder="Nome Completo *" required>
 
             <!-- Email -->
-            <input type="email" name="email" placeholder="Email *">
+            <input type="email" name="email" placeholder="Email *" required>
 
             <!-- Telefone -->
-            <input type="tel" name="telefone" placeholder="Seu WhatsApp">
+            <input type="tel" name="telefone" placeholder="Seu WhatsApp" required>
+
+            <!-- Assunto -->
+            <input type="text" name="assunto" placeholder="Assunto" required>
+            
+            <!-- Mensagem -->
+            <textarea name="mensagem" placeholder="Digite sua mensagem aqui" required rows="6"></textarea>
 
             <button type="submit">
-              Enviar
+              <span>Enviar</span>
+              <i class="bi bi-send"></i>
             </button>        
-
+            
           </form>
 
         </div>
