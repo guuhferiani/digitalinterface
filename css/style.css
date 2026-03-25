@@ -439,10 +439,15 @@ p {
   border-radius: 0.5rem;
 }
 
-
 /* Responsivo */
 
 /* Largura ate */
+@media (max-width: 1200px) {
+  .contato-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 768px) {
   .carousel .carousel-inner {
     margin-top: -2rem;
@@ -451,10 +456,6 @@ p {
   #home {
     padding-top: 6rem;
   }
-
-  /* .contato-grid {
-    grid-template-columns: 1fr;
-  } */
 }
 
 /* A partir de Telas Grandes */
