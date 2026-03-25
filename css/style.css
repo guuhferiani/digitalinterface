@@ -439,10 +439,42 @@ p {
   border-radius: 0.5rem;
 }
 
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Inputs */
+.form-contato input,
+.form-contato textarea {
+  width: 100%;
+  /* Cor fundo secundaria */
+  background-color: var(--cor-fundo);
+  font-size: 1.8rem;
+  /* aumenta a distancia interna */
+  padding: 0.75rem 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  color: var(--cor-textos);
+}
+
+/* Pseudo elemento */
+.form-contato input::placeholder,
+.form-contato textarea::placeholder {
+  /* Cor com Transparencia */
+  color: #8686867b;
+  font-size: 1.8rem;
+}
+
+
+
+
+
 /* Responsivo */
 
-/* Largura ate */
-@media (max-width: 1200px) {
+/* Largura até */
+@media (max-width: 1199px) {
   .contato-grid {
     grid-template-columns: 1fr;
   }
@@ -456,6 +488,10 @@ p {
   #home {
     padding-top: 6rem;
   }
+
+  /* .contato-grid {
+    grid-template-columns: 1fr;
+  } */
 }
 
 /* A partir de Telas Grandes */
@@ -525,7 +561,6 @@ p {
   .projetos h2,
   .contato h2 {
     font-size: 4rem;
-    color: red;
   }
 }
 
