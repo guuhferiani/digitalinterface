@@ -394,6 +394,7 @@ p {
   gap: 1.8rem;
   border-top: 1px solid var(--cor-borda);
   border-bottom: 1px solid var(--cor-borda);
+  scroll-margin-top: 3.5rem;
 }
 
 .contato h2 {
@@ -437,6 +438,7 @@ p {
   height: 100%;
   border: none;
   border-radius: 0.5rem;
+  box-shadow: 5px 5px 15px -2px #ffffff89;
 }
 
 .form-contato {
@@ -468,6 +470,37 @@ p {
 }
 
 
+.form-contato button {
+  border: 0;
+  background-color: var(--cor-fundo);
+  align-items: center;
+  /* Adapta ao Conteudo */
+  align-self: flex-start;
+  gap: 2rem;
+  display: flex;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  box-shadow: 5px 5px 5px #b3b3b36b;
+}
+
+.form-contato button i, 
+.form-contato button span {
+  color: var(--cor-titulo);
+} 
+
+.form-contato button:hover {
+  filter: brightness(1.5);
+  transition: ease-in-out 0.3s;
+  background-color: #7a81858f;
+  transform: scale(1.03);
+}
+
+.form-contato button i {
+  font-size: 2rem;
+}
+
+
+/* Footer // Roda Pé */
 
 
 
