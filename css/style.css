@@ -30,6 +30,7 @@
   --destaque-icones: #fff;
 
   --cor-borda: #7a8185c9;
+  --icone-menu-mobile: #fff;
 }
 
 /* Tema Claro */
@@ -50,6 +51,9 @@
   --destaque-icones: #000;
 
   --cor-borda: #232525c9;
+
+  --icone-menu-mobile: #000;
+
 }
 
 /* Filtro Cor do Logo */
@@ -79,7 +83,7 @@ html {
 
 /* TODA ESTRUTURA DO SITE ou HTML */
 body {
-  background-color: var(--cor-fundo-secundaria);
+  background-color: var(--cor-fundo);
   font-size: 16px;
 }
 
@@ -106,6 +110,8 @@ header {
 /* .menu = UL */
 .menu {
   display: flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   gap: 16px;
 }
@@ -129,6 +135,40 @@ header {
 .menu-link:hover .menu-texto {
   color: var(--cor-destaque);
 }
+
+/* Menu Mobile */
+
+/* Icone Hamburger */
+.btn-menu-mobile {
+  background: transparent;
+  color: var(--icone-menu-mobile);
+  border: none;
+  font-size: 2.2rem;
+  padding: 1rem;
+  margin-left: 1rem;
+}
+
+/* menu mobile (estilo e animação) */
+.menu-mobile {
+  /* NAV */
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: var(--cor-fundo-secundaria);
+  z-index: 100;
+  transform: translateX(100%);
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+.menu-mobile.active {
+  transform: translateX(0%);
+}
+
+
+
 
 .logo img {
   width: 5.2rem; /* 52 PX L  */
@@ -452,7 +492,7 @@ p {
 .form-contato textarea {
   width: 100%;
   /* Cor fundo secundaria */
-  background-color: var(--cor-fundo);
+  background-color: var(--cor-fundo-secundaria);
   font-size: 1.8rem;
   /* aumenta a distancia interna */
   padding: 0.75rem 1rem;
@@ -472,7 +512,7 @@ p {
 
 .form-contato button {
   border: 0;
-  background-color: var(--cor-fundo);
+  background-color: var(--cor-fundo-secundaria);
   align-items: center;
   /* Adapta ao Conteudo */
   align-self: flex-start;

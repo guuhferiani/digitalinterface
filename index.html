@@ -64,12 +64,38 @@
         <i class="bi bi-sun" id="toggleTheme"></i>
 
         <!-- Botao Mobile Hamburger -->
-        <button>
+        <button class="btn-menu-mobile" id="menuHamburger">
           <i class="bi bi-list"></i>
         </button>
       </div>
-      <!-- Shift + ALT + F -->
     </header>
+
+    <!-- Menu Mobile -->
+    <nav class="menu menu-mobile" id="menuMobile">
+      <!-- Menu vira Vertical -->
+      <ul class="menu-lista">
+        <li>
+          <a href="#home" class="menu-link active">
+            <span class="menu-texto">home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#projetos" class="menu-link">
+            <span class="menu-texto">Projetos</span>
+          </a>
+        </li>
+        <li>
+          <a href="" class="menu-link">
+            <span class="menu-texto">sobre</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contato" class="menu-link">
+            <span class="menu-texto">contato</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
     <!-- Home -->
     <main id="home">
@@ -353,8 +379,11 @@
       <!-- Redes Sociais -->
       <ul class="menu-social">
         <li>
-          <a href="https://www.instagram.com/gustavo.feriani"
-            class="menu-link" target="_blank">
+          <a
+            href="https://www.instagram.com/gustavo.feriani"
+            class="menu-link"
+            target="_blank"
+          >
             <i class="bi bi-instagram social-icon"></i>
           </a>
           <span> Instagram </span>
@@ -381,35 +410,56 @@
           <h2>Fale Comigo</h2>
 
           <!-- Forms -->
-          <form action="https://formspree.io/f/xqegzqnn" method="POST" class="form-contato">
-            
+          <form
+            action="https://formspree.io/f/xqegzqnn"
+            method="POST"
+            class="form-contato"
+          >
             <!-- Entrada NOME -->
-            <input type="text" name="nome" placeholder="Nome Completo *" required>
+            <input
+              type="text"
+              name="nome"
+              placeholder="Nome Completo *"
+              required
+            />
 
             <!-- Email -->
-            <input type="email" name="email" placeholder="Email *" required>
+            <input type="email" name="email" placeholder="Email *" required />
 
             <!-- Telefone -->
-            <input type="tel" name="telefone" placeholder="Seu WhatsApp" required>
+            <input
+              type="tel"
+              name="telefone"
+              placeholder="Seu WhatsApp"
+              required
+            />
 
             <!-- Assunto -->
-            <input type="text" name="assunto" placeholder="Assunto" required>
-            
+            <input type="text" name="assunto" placeholder="Assunto" required />
+
             <!-- Mensagem -->
-            <textarea name="mensagem" placeholder="Digite sua mensagem aqui" required rows="6"></textarea>
+            <textarea
+              name="mensagem"
+              placeholder="Digite sua mensagem aqui"
+              required
+              rows="6"
+            ></textarea>
 
             <button type="submit">
               <span>Enviar</span>
               <i class="bi bi-send"></i>
-            </button>        
-            
+            </button>
           </form>
-
         </div>
 
         <!-- Mapa -->
         <div class="contato-mapa">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1489401278445!2d-46.73755341517818!3d-23.52714491325964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8b811e8e3a1%3A0xa7564bb4c78f41b3!2sSenai%20Vila%20Leopoldina%20-%20Mariano%20Ferraz!5e0!3m2!1spt-BR!2sbr!4v1774397655784!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1489401278445!2d-46.73755341517818!3d-23.52714491325964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8b811e8e3a1%3A0xa7564bb4c78f41b3!2sSenai%20Vila%20Leopoldina%20-%20Mariano%20Ferraz!5e0!3m2!1spt-BR!2sbr!4v1774397655784!5m2!1spt-BR!2sbr"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </section>

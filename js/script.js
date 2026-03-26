@@ -1,10 +1,17 @@
 //DOM JS
-
 document.addEventListener('DOMContentLoaded', () => {
     
+    // VAR GLOBAL
     // objeto no HTML (Icone Sol ou Lua)
     const toggleTheme = document.getElementById('toggleTheme');
     const rootHtml = document.documentElement;
+    // Var para Menu Hamburger
+    //botao do menu 
+    const menuHamburger = document.getElementById('menuHamburger');
+    //estrutura do menu = conteudo/lista
+    const menuMobile = document.getElementById('menuMobile');
+    // Verificação ou condição
+    const icon = menuHamburger?.querySelector('i');
 
     //Função Mudar/Alternar a cor do Tema (Dark / Light)
 
@@ -23,4 +30,21 @@ document.addEventListener('DOMContentLoaded', () => {
         toggleTheme.addEventListener('click', changeTheme);
     }
 
+
+    //Alternar o menu Mobile e icone
+    function toggleMenu()  {
+
+        //lista NAV
+        // Variavel conceito de Estado
+        const isOpen = menuMobile.classList.toggle('active');
+        //condicao
+        if(icon) {
+            icon.classList.toggle('bi-list', !isOpen);
+            icon.classList.toggle('bi-x-list', isOpen);
+        }
+    }
+
+    if (menuHamburger) {
+        menuHamburger.addEventListener('click', toggleMenu);
+    }
 });
