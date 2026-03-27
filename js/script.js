@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         //condicao
         if(icon) {
             icon.classList.toggle('bi-list', !isOpen);
-            icon.classList.toggle('bi-x-list', isOpen);
+            icon.classList.toggle('bi-x-lg', isOpen);
         }
     }
 

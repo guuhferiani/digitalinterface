@@ -149,23 +149,50 @@ header {
 }
 
 /* menu mobile (estilo e animação) */
-.menu-mobile {
   /* NAV */
+.menu-mobile {
   position: fixed;
   top: 0;
   right: 0;
+  /* left: 0  menu da Esq para Dir*/
   background: var(--cor-fundo-secundaria);
   z-index: 100;
+  /* Sair total da tela */
   transform: translateX(100%);
   display: flex;
   flex-direction: column;
-  
+  padding-top: 6.5rem;
+  border-left: 1px solid var(--cor-borda);
+  height: 100vh;
+  width: 35%;
+  transition: ease-in-out 0.3s;
 }
-
 
 .menu-mobile.active {
+  /* Ela volta para o Original */
   transform: translateX(0%);
 }
+
+.menu-mobile .menu-lista {
+  width: 100%;
+  text-align: start;
+  padding: 2rem 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* estrutura lista */
+.menu-mobile li:hover {
+  background: var(--cor-fundo);
+  width: 100%;
+  padding: 0;
+}
+
+/* A href e span */
+.menu-lista .menu-link:hover {
+  color: var(--cor-textos);
+}
+
 
 
 
@@ -569,6 +596,11 @@ p {
 
 /* A partir de Telas Grandes */
 @media (min-width: 768px) {
+
+  .btn-menu-mobile {
+    display: none;
+  }
+
   header {
     padding: 1rem 10rem;
     justify-content: flex-start;
