@@ -12,6 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuMobile = document.getElementById('menuMobile');
     // Verificação ou condição
     const icon = menuHamburger?.querySelector('i');
+    /* todas as Classes menu-link do HTML */
+    const menuLinks = document.querySelectorAll('.menu-link');
+
+
 
     //Função Mudar/Alternar a cor do Tema (Dark / Light)
 
@@ -47,4 +51,18 @@ document.addEventListener('DOMContentLoaded', () => {
     if (menuHamburger) {
         menuHamburger.addEventListener('click', toggleMenu);
     }
+
+
+    //Ativar link clicado == Menu
+    menuLinks.forEach(item => {
+        item.addEventListener('click', () => {
+            menuLinks.forEach(i => i.classList.remove('active'));
+            item.classList.add('active');
+        });
+    });
+
+    // botao voltar ao topo
+    const btnTopo = document.getElementById('btn-topo');
+    
+
 });
